@@ -1,0 +1,226 @@
+.popular-foods {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  background-image: url(../../assets/popular_bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.popular-foods h2 {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 32px;
+  line-height: 78px;
+  text-align: center;
+}
+
+.popular-foods__filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-block: 24px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.popular-foods__filter-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 28px;
+  border-radius: 46px;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--color-white);
+  line-height: 24px;
+  background: rgba(255, 255, 255, 0.09);
+  border: rgba(255, 255, 255, 0.09);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-foods__filter-btn img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.popular-foods__filter-btn.active {
+  background: var(--color-white);
+  color: var(--primary-color);
+}
+.popular-foods__filter-btn:hover {
+  background: var(--color-white);
+  color: var(--primary-color);
+}
+
+.popular-foods__catalogue {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.popular-foods__button {
+  width: fit-content;
+  padding: 16px 32px;
+  border-radius: 64px;
+  margin: 80px auto 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--color-white);
+  background: var(--secondary-color);
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+.popular-foods__button:hover {
+  background: var(--black-400);
+}
+
+.popular-foods__button img {
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  object-fit: contain;
+  margin-left: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-foods__button:hover img {
+  transform: translateX(8px);
+}
+
+.popular-food__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 38px;
+  min-width: 260px;
+  height: fit-content;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popular-food__card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-white);
+}
+
+.popular-food__card img {
+  width: 110px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.popular-food__card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-white);
+  font-family: var(--playfair-display);
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-food__card:hover h3 {
+  color: var(--black-500);
+}
+
+.popular-foods__card-details {
+  width: 100%;
+  margin-top: 16px;
+  text-align: center;
+  flex-direction: row-reverse;
+}
+
+.popular-foods__card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--color-white);
+}
+
+.popular-foods__card-rating img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.popular-foods__card-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-white);
+  font-family: var(--plus-jakarta-sans);
+  line-height: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-food__card:hover .popular-foods__card-price {
+  color: var(--secondary-color);
+}
+
+.popular-foods__card-rating span {
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-food__card:hover .popular-foods__card-rating span {
+  color: var(--gray-100);
+}
+
+.popular-food__card.active-card {
+  background: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.popular-food__card.active-card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.popular-food__card.active-card .popular-foods__card-image {
+  width: 214px;
+  height: 164px;
+}
+
+.popular-food__card.active-card .popular-foods__card-title {
+  color: var(--black-500);
+  font-size: 32px;
+}
+
+.popular-food__card.active-card .popular-foods__card-rating span {
+  color: var(--gray-100);
+  font-size: 24px;
+}
+
+.popular-food__card.active-card .popular-foods__card-rating img {
+  width: 32px;
+  height: 32px;
+}
+
+.popular-food__card.active-card .popular-foods__card-price {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
